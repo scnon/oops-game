@@ -9,7 +9,7 @@ import { oops } from "../../../../../extensions/oops-plugin-framework/assets/cor
 import { ecs } from "../../../../../extensions/oops-plugin-framework/assets/libs/ecs/ECS";
 import { CCVMParentComp } from "../../../../../extensions/oops-plugin-framework/assets/module/common/CCVMParentComp";
 import { ModuleUtil } from "../../../../../extensions/oops-plugin-framework/assets/module/common/ModuleUtil";
-import { LoginView } from "../../account/view/LoginView";
+import { LoginView } from "../../login/view/LoginView";
 import { smc } from "../../common/SingletonModuleComp";
 import { UIID } from "../../common/config/GameUIConfig";
 

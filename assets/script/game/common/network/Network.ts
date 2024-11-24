@@ -2,6 +2,7 @@ import { SeedRandom } from "../../../../../extensions/oops-plugin-framework/asse
 import { oops } from "../../../../../extensions/oops-plugin-framework/assets/core/Oops";
 import { ecs } from "../../../../../extensions/oops-plugin-framework/assets/libs/ecs/ECS";
 import { Client, Session, Socket } from "@heroiclabs/nakama-js";
+import { smc } from "../SingletonModuleComp";
 
 /**
  * 游戏进入初始化模块
@@ -33,6 +34,7 @@ export class Network extends ecs.Entity {
       const res = await this.beginConnect();
       if (res != undefined) {
         this.session = res;
+        smc.account.login(this.session);
       }
     }
     return this.session;

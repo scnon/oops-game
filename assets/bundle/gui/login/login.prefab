@@ -411,7 +411,7 @@
       "__id__": 1
     },
     "component": "",
-    "_componentId": "bbbdebSIGRB4Yej3f94+Dx2",
+    "_componentId": "f3162jdkV1Bha6UOv8NzFZL",
     "handler": "login",
     "customEventData": ""
   },
@@ -493,7 +493,7 @@
     "fileId": "a9Eh9hnWBPCZvjFwuFLNVw"
   },
   {
-    "__type__": "bbbdebSIGRB4Yej3f94+Dx2",
+    "__type__": "f3162jdkV1Bha6UOv8NzFZL",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
@@ -508,7 +508,7 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "b3PQ3IeMND4arWJVxywXIC"
+    "fileId": "718m13cltEc4dGXKIqHzeM"
   },
   {
     "__type__": "cc.PrefabInfo",

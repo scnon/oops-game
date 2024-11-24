@@ -4,7 +4,7 @@ import { CCComp } from "../../../../../extensions/oops-plugin-framework/assets/m
 import { oops } from "../../../../../extensions/oops-plugin-framework/assets/core/Oops";
 import { ModuleUtil } from "../../../../../extensions/oops-plugin-framework/assets/module/common/ModuleUtil";
 import { smc } from "../../common/SingletonModuleComp";
-import { LobbyView } from "./LobbyView";
+import { LobbyView } from "../../lobby/view/LobbyView";
 import { UIID } from "../../common/config/GameUIConfig";
 
 const { ccclass, property } = _decorator;
@@ -18,9 +18,12 @@ export class LoginView extends CCComp {
   async login() {
     let res = await smc.network.login();
     oops.log.logView("login result:", res?.user_id);
-    return;
-    await ModuleUtil.addViewUiAsync(smc.account, LobbyView, UIID.Lobby);
-    ModuleUtil.removeViewUi(this.ent, LoginView, UIID.Login);
+    // return;
+    // await ModuleUtil.addViewUiAsync(smc.account, LobbyView, UIID.Lobby);
+    // ModuleUtil.removeViewUi(this.ent, LoginView, UIID.Login);
+    if (res != null) {
+      oops.gui.open(UIID.Lobby);
+    }
   }
 
   reset() {
